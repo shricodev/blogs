@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.get("/api/data", async (req, res) => {
   try {
-    const response = await fetch("http://microservice2:3002/api/data");
+    const response = await fetch("http://<cluster_ip>:30002/api/data");
     const data = await response.json();
     res.json({
       data: "Microservice 2 data received in Microservice 1",

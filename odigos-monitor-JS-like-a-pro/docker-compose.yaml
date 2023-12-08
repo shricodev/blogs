@@ -6,7 +6,7 @@ services:
       context: ./src/microservice-1
       dockerfile: Dockerfile
     ports:
-      - "3001:3001"
+      - "30001:3001"
     depends_on:
       - microservice2
 
@@ -15,4 +15,4 @@ services:
       context: ./src/microservice-2
       dockerfile: Dockerfile
     ports:
-      - "3002:3002"
+      - "30002:3002"
