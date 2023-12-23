@@ -1,0 +1,40 @@
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Python virtual environment
+venv/
+
+# Environment-specific files
+.env
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled files
+*.pyc
+
+# Log files
+*.log
+
+# Dependency directories
+__pycache__/
+dist/
+build/
+
+# Compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Cache files
+*.pyc
+
+# Package files
+*.egg-info/
+dist/
+build/
+
+# Miscellaneous
+*.DS_Store
