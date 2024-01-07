@@ -1,0 +1,5 @@
+.venv
+README.md
+__pycache__
+Dockerfile
+.dockerignore

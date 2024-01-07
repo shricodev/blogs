@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  microservice1:
+    build:
+      context: ./src/microservice1
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+
+  microservice2:
+    build:
+      context: ./src/microservice2
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
