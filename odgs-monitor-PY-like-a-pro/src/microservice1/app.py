@@ -28,7 +28,7 @@ def get_users():
     return render_template("index.html", users=response.json())
 
 
-@app.route("/user-details")
+@app.route("/os-details")
 def details():
     host_name, host_ip = user_os_details()
     return jsonify(hostname=host_name, hostip=host_ip)

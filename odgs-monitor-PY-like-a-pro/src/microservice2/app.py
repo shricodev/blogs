@@ -50,7 +50,7 @@ def health():
 @app.route("/os-details")
 def details():
     try:
-        response = requests.get("http://microservice1:5000/user-details").json()
+        response = requests.get("http://microservice1:5000/os-details").json()
         host_name = response["hostname"]
         host_ip = response["hostip"]
         return render_template("index.html", hostname=host_name, hostip=host_ip)
