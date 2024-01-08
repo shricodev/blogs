@@ -4,12 +4,16 @@ services:
     build:
       context: ./src/microservice1
       dockerfile: Dockerfile
+    image: microservice1-image:1.0
     ports:
       - "5000:5000"
+    restart: always
 
   microservice2:
     build:
       context: ./src/microservice2
       dockerfile: Dockerfile
+    image: microservice2-image:1.0
     ports:
       - "5001:5001"
+    restart: always

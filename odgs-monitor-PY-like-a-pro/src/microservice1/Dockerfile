@@ -23,7 +23,7 @@ RUN apk --no-cache add curl
 
 USER lowkey
 
-HEALTHCHECK --interval=30s --timeout=30s --start-period=30s --retries=5 \ 
+HEALTHCHECK --interval=30s --timeout=30s --start-period=30s --retries=5 \
             CMD curl -f http://localhost:5000/health || exit 1
 
 ENTRYPOINT [ "python", "app.py" ]
