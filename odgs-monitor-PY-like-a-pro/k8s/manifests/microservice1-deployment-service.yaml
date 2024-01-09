@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: microservice1
-          image: microservice1-image
+          image: microservice1-image:1.0
           imagePullPolicy: Never
           resources:
             limits:
