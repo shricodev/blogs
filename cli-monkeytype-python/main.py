@@ -34,6 +34,7 @@ def main(stdscr):
             0,
             "Congratulations! You have completed the test! Press any key to continue...",
         )
+        stdscr.nodelay(False)
         key = stdscr.getkey()
 
         # Check if the key is a single character before using ord()
