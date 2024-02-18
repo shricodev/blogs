@@ -23,6 +23,11 @@ class TypingTest:
         self.wpm = 0
         self.start_time = time.time()
 
+        # Initialize color pairs
+        curses.init_pair(3, curses.COLOR_WHITE, curses.COLOR_BLACK)
+        curses.init_pair(2, curses.COLOR_RED, curses.COLOR_BLACK)
+        curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
+
     def get_line_to_type(self):
         """Select a random line of text from the 'typing_texts.txt' file to be typed by the user."""
 
